@@ -16,6 +16,8 @@ internal class Program
     public static MessageSendingView messageSendingView;
     public static UserIncomingMessageView userIncomingMessageView;
     public static UserOutcomingMessageView userOutcomingMessageView;
+    //rds
+    public static UserFriendsView userFriendsView;
 
     static void Main(string[] args)
     {

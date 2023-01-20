@@ -17,7 +17,7 @@ namespace SocialNetwork.PLL.Views
 
         public void Show(User user)
         {
-            while(true)
+            while (true)
             {
                 Console.WriteLine("Входящие сообщения: {0}", user.IncomingMessages.Count());
                 Console.WriteLine("Исходящие сообщения: {0}", user.OutgoingMessages.Count());
@@ -46,6 +46,12 @@ namespace SocialNetwork.PLL.Views
                             Program.userDataUpdateView.Show(user);
                             break;
                         }
+                    //RDS
+                    case "3":
+                        {
+                            Program.userFriendsView.Show();
+                            break;
+                        }
 
                     case "4":
                         {
@@ -65,9 +71,15 @@ namespace SocialNetwork.PLL.Views
                             Program.userOutcomingMessageView.Show(user.OutgoingMessages);
                             break;
                         }
+                    //RDS
+                    default:
+                        {
+                            Console.WriteLine("Неверный ввод. Введите число от 1 до 7.");
+                            break;
+                        }
                 }
             }
-            
+
         }
     }
 }
